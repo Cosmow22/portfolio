@@ -1,0 +1,22 @@
+.nerd {
+    font-family: "VT323"
+}
+
+#hello {
+    font-size: 128px;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h2 {
+    position: absolute;
+    font-size: 64px;
+    bottom: 20px; /* distance depuis le bas */
+    left: 120px;   /* distance depuis la gauche */
+    font-family: "Geist", sans-serif;;
+}
