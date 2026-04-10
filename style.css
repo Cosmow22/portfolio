@@ -43,7 +43,7 @@ header {
   justify-content: flex-end;
 }
 
-#contact-btn {
+#contact-btn{
   font-family: "Geist Mono", monospace;
   text-decoration: none;
   background-color: black;
@@ -133,4 +133,21 @@ a:hover .project,
     rgba(230, 27, 27, 0.03) 0%,
     transparent 50%
   );
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .socials {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+footer a {
+  color: black;
+  font-family: "Geist Mono", monospace;
 }
