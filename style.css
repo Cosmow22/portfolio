@@ -1,9 +1,15 @@
+body {
+    padding: 0 128px;
+}
+
+
 .nerd {
     font-family: "VT323"
 }
 
 #hello {
-    font-size: 128px;
+    /* font-size: 128px; */
+    font-size: clamp(1.8rem, 10vh, 128px);
 }
 
 #hero {
@@ -12,11 +18,81 @@
     justify-content: center;
     align-items: center;
 }
-
-#hero h2 {
-    position: absolute;
+/* 
+.typed-cursor {
     font-size: 64px;
-    bottom: 20px; /* distance depuis le bas */
-    left: 120px;   /* distance depuis la gauche */
-    font-family: "Geist", sans-serif;;
+} */
+
+.typed-cursor {
+  font-size: inherit;
+  line-height: 1;
+  vertical-align: top;
+  font-size: 80px;
+}
+
+h2, h3 {
+    font-family: "Geist Mono", monospace;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#contact-btn {
+    font-family: "Geist Mono", monospace;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    position: fixed;
+    margin-right: 20px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    max-width: 600px;
+    /* font-size: 16px; */
+    line-height: 26px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    height: 374px;
+}
+
+h2 {
+    width: 300px;
+    color: grey;
+    font-size: 1em;
+}
+
+.badge {
+    font-family: "Geist Mono", monospace;
+    color: grey;
+    text-decoration: none;
+    border: 1px solid grey;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: black    
+}
+
+#projects {
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.text {
+  display: flex;
+  gap: 50px
 }
