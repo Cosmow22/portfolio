@@ -6,3 +6,15 @@ var typed = new Typed('#hello', {
   startDelay: 500,
   loop: false
   });
+
+const arrow = document.getElementById("scroll-arrow");
+
+setTimeout(() => {
+  arrow.classList.remove("hidden");
+}, 7000);
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    arrow.classList.add("hidden");
+  }
+});
