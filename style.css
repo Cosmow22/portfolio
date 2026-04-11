@@ -51,6 +51,11 @@ header {
   padding: 10px 15px;
   position: fixed;
   right: 2vw;
+  transition: transform 0.3 ease;
+}
+
+#contact-btn:hover {
+  transform: scale(0.95);
 }
 
 p {
