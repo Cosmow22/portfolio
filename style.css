@@ -1,5 +1,7 @@
-body {
-  padding: 0 128px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .nerd {
@@ -11,7 +13,7 @@ body {
 }
 
 #hero {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +53,9 @@ header {
   padding: 10px 15px;
   position: fixed;
   right: 2vw;
+  top: 2vh;
   transition: transform 0.3 ease;
+  z-index: 4; 
 }
 
 #contact-btn:hover {
@@ -61,17 +65,18 @@ header {
 p {
   font-family: "Inter", sans-serif;
   max-width: 600px;
-  /* font-size: 16px; */
 }
 
 h2 {
   width: 300px;
   color: grey;
   font-size: 1em;
+  margin-bottom: 10vh;
 }
 
 section {
   margin-bottom: 30vh;
+  padding: 0 128px;
 }
 
 .badge {
