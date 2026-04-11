@@ -159,9 +159,9 @@ footer a {
 }
 
 @media screen and (max-width: 1045px) {
-  body {
-    padding: 25px
-  }
+  /* body {
+    padding: 25px;
+  } */
 
   .typed-cursor {
     font-size: clamp(2.2rem, 4vw , 80px)
@@ -170,6 +170,7 @@ footer a {
   section {
     flex-direction: column;
     margin-bottom: 10vh;
+    padding: 15px;
   }
 
   .content, .text {
