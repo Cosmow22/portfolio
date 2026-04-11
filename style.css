@@ -7,7 +7,7 @@ body {
 }
 
 .hidden {
-  opacity: 0  ;
+  opacity: 0;
 }
 
 #hero {
@@ -57,19 +57,16 @@ p {
   font-family: "Inter", sans-serif;
   max-width: 600px;
   /* font-size: 16px; */
-  line-height: 26px;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 30vh;
 }
 
 h2 {
   width: 300px;
   color: grey;
   font-size: 1em;
+}
+
+section {
+  margin-bottom: 30vh;
 }
 
 .badge {
@@ -115,8 +112,7 @@ h2 {
   width: 2px;
   background: grey;
   transform: scaleY(0);
-  /* transform-origin: bottom; */
-  transition: transform 0.1s cubic-bezier(0.16, 1, 0.3, 1);
+  transform-origin: bottom;
   z-index: 1;
 }
 
@@ -150,4 +146,37 @@ footer .socials {
 footer a {
   color: black;
   font-family: "Geist Mono", monospace;
+}
+
+@media screen and (max-width: 1045px) {
+  body {
+    padding: 25px
+  }
+
+  .typed-cursor {
+    font-size: clamp(2.2rem, 4vw , 80px)
+  }
+
+  section {
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+
+  .content, .text {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .text {
+    gap: 0;
+    padding: 0;
+  }
+   
+  .project {
+    padding: 10px;
+  }
+
+  #contact-btn {
+    opacity: 0;
+   }
 }
