@@ -1,7 +1,5 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+body {
+  padding: 0 128px;
 }
 
 .nerd {
@@ -13,7 +11,7 @@
 }
 
 #hero {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,9 +38,27 @@ h2, h3 {
   font-family: "Geist Mono", monospace;
 }
 
+h2 {
+  color: grey;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
 header {
   display: flex;
   justify-content: flex-end;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  max-width: 600px;
+}
+
+section {
+  margin-bottom: 30vh;
 }
 
 #contact-btn{
@@ -53,30 +69,11 @@ header {
   padding: 10px 15px;
   position: fixed;
   right: 2vw;
-  top: 2vh;
   transition: transform 0.3 ease;
-  z-index: 4; 
 }
 
 #contact-btn:hover {
   transform: scale(0.95);
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  max-width: 600px;
-}
-
-h2 {
-  width: 300px;
-  color: grey;
-  font-size: 1em;
-  margin-bottom: 10vh;
-}
-
-section {
-  margin-bottom: 30vh;
-  padding: 0 128px;
 }
 
 .badge {
@@ -124,7 +121,6 @@ section {
   transform: scaleY(0);
   transform-origin: bottom;
   z-index: 1;
-  filter: blur(0.75px)
 }
 
 a:hover .project::before,
@@ -160,9 +156,9 @@ footer a {
 }
 
 @media screen and (max-width: 1045px) {
-  /* body {
-    padding: 25px;
-  } */
+  body {
+    padding: 25px
+  }
 
   .typed-cursor {
     font-size: clamp(2.2rem, 4vw , 80px)
@@ -171,7 +167,6 @@ footer a {
   section {
     flex-direction: column;
     margin-bottom: 10vh;
-    padding: 15px;
   }
 
   .content, .text {
