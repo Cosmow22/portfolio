@@ -124,6 +124,7 @@ section {
   transform: scaleY(0);
   transform-origin: bottom;
   z-index: 1;
+  filter: blur(0.75px)
 }
 
 a:hover .project::before,
