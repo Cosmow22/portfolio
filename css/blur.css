@@ -1,0 +1,30 @@
+/*
+Source - https://stackoverflow.com/a/63353462
+Posted by Kaiido, modified by community. See post 'Timeline' for change history
+Retrieved 2026-04-12, License - CC BY-SA 4.0
+*/
+
+#blur-around {
+    position: fixed;
+    z-index: 999;
+    pointer-events: none;
+    /* twice the viewport size so it always covers fully */
+    width: 200vw;
+    height: 200vh;
+    /* negative offset by half so we are sure we cover the full viewport */
+    left: -100vw;
+    top: -100vh;
+    /* we'll use transform translate to move it */
+    transform-origin: center;  
+    -webkit-backdrop-filter: blur(0.75px);
+    backdrop-filter: blur(0.75px);
+    -webkit-mask-image: radial-gradient(50px at 50% 50%, transparent 0px, rgba(0, 0, 0, 0.3) 200px, black 300px);
+    mask-image: radial-gradient(50px at 50% 50%, transparent 0px, rgba(0, 0, 0, 0.3) 200px, black 300px);
+}
+
+/* falback for browsers that don't have backdrop-filter */
+@supports not ((backdrop-filter: blur(0px)) or (-webkit-backdrop-filter: blur(0px))) {
+    #blur-around {
+        background-color: rgba(255,255,255,.8);
+    }
+}

@@ -1,0 +1,37 @@
+h1, #contact-btn, footer {
+    text-shadow: -1.5px -1.5px 2px #00ff, 1.5px 1.5px 2px #f30d;
+    filter: drop-shadow(-2px -2px 2px #00f3) drop-shadow(2px 2px 2px #f302);
+}
+
+@keyframes scan {
+    0% {
+        transform: translateY(0vh);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+/* h1, h2, h3, a, p,  #contact-btn, #scroll-arrow, footer {
+    position: relative;
+    font-weight: 600;
+    filter: blur(0.75px);
+} */
+
+html::after {
+    pointer-events: none;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 200vh;
+    content: '';
+    background: linear-gradient(#fff, #000, #fff);
+    opacity: 10%;
+    background-size: 100% 5px;
+    animation-duration: 120s;
+    animation-name: scan;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+}
