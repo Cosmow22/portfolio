@@ -256,5 +256,10 @@ footer a {
 
   #contact-btn {
     opacity: 0;
-   }
+  }
+
+  #socials {
+    flex-direction: column;
+  }
+  
 }
