@@ -18,12 +18,3 @@ window.addEventListener("scroll", () => {
     arrow.classList.add("hidden");
   }
 });
-
-// Source - https://stackoverflow.com/a/63353462
-// Posted by Kaiido, modified by community. See post 'Timeline' for change history
-// Retrieved 2026-04-12, License - CC BY-SA 4.0
-
-const blur_elem = document.getElementById( "blur-around" );
-document.onmousemove = (evt) => {
-  blur_elem.style.transform = `translate(${evt.clientX}px, ${evt.clientY}px)`;
-};
